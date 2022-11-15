@@ -8684,8 +8684,8 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </class>
 </classes>
 <parts>
-<part name="ADC1" library="HX711" deviceset="HX711" device="SOIC127P600X140-16N" package3d_urn="urn:adsk.eagle:package:38132012/1"/>
-<part name="LDO" library="Celda_Carga" deviceset="AP2210N-4.0TRG1" device=""/>
+<part name="U1" library="HX711" deviceset="HX711" device="SOIC127P600X140-16N" package3d_urn="urn:adsk.eagle:package:38132012/1"/>
+<part name="U3" library="Celda_Carga" deviceset="AP2210N-4.0TRG1" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8708,7 +8708,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="2.2u"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="ADC2" library="HX711" deviceset="HX711" device="SOIC127P600X140-16N" package3d_urn="urn:adsk.eagle:package:38132012/1"/>
+<part name="U2" library="HX711" deviceset="HX711" device="SOIC127P600X140-16N" package3d_urn="urn:adsk.eagle:package:38132012/1"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8736,11 +8736,11 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <plain>
 </plain>
 <instances>
-<instance part="ADC1" gate="ADC$1" x="72.39" y="52.07" smashed="yes">
+<instance part="U1" gate="ADC$1" x="72.39" y="52.07" smashed="yes">
 <attribute name="NAME" x="59.69" y="74.93" size="1.778" layer="95"/>
 <attribute name="VALUE" x="59.69" y="21.59" size="1.778" layer="96"/>
 </instance>
-<instance part="LDO" gate="U$1" x="77.47" y="100.33" smashed="yes">
+<instance part="U3" gate="U$1" x="77.47" y="100.33" smashed="yes">
 <attribute name="NAME" x="39.37" y="125.73" size="1.778" layer="95"/>
 </instance>
 <instance part="GND2" gate="1" x="81.28" y="57.15" smashed="yes" rot="R90">
@@ -8829,7 +8829,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <instance part="GND10" gate="1" x="64.77" y="92.71" smashed="yes">
 <attribute name="VALUE" x="62.23" y="90.17" size="1.778" layer="96"/>
 </instance>
-<instance part="ADC2" gate="ADC$1" x="83.82" y="-20.32" smashed="yes">
+<instance part="U2" gate="ADC$1" x="83.82" y="-20.32" smashed="yes">
 <attribute name="NAME" x="71.12" y="2.54" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.12" y="-50.8" size="1.778" layer="96"/>
 </instance>
@@ -8938,17 +8938,17 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <net name="GND" class="0">
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="ADC1" gate="ADC$1" pin="XI"/>
+<pinref part="U1" gate="ADC$1" pin="XI"/>
 <wire x1="78.74" y1="57.15" x2="77.47" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="ADC1" gate="ADC$1" pin="INB+"/>
+<pinref part="U1" gate="ADC$1" pin="INB+"/>
 <wire x1="78.74" y1="36.83" x2="77.47" y2="36.83" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="ADC1" gate="ADC$1" pin="INB-"/>
+<pinref part="U1" gate="ADC$1" pin="INB-"/>
 <wire x1="78.74" y1="31.75" x2="77.47" y2="31.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8963,7 +8963,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="ADC1" gate="ADC$1" pin="AGND"/>
+<pinref part="U1" gate="ADC$1" pin="AGND"/>
 <wire x1="35.56" y1="46.99" x2="46.99" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="41.91" x2="35.56" y2="41.91" width="0.1524" layer="91"/>
@@ -8983,7 +8983,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="LDO" gate="U$1" pin="GND"/>
+<pinref part="U3" gate="U$1" pin="GND"/>
 <wire x1="44.45" y1="95.25" x2="44.45" y2="97.79" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8998,17 +8998,17 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="ADC2" gate="ADC$1" pin="XI"/>
+<pinref part="U2" gate="ADC$1" pin="XI"/>
 <wire x1="90.17" y1="-15.24" x2="88.9" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
-<pinref part="ADC2" gate="ADC$1" pin="INB+"/>
+<pinref part="U2" gate="ADC$1" pin="INB+"/>
 <wire x1="90.17" y1="-35.56" x2="88.9" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="ADC2" gate="ADC$1" pin="INB-"/>
+<pinref part="U2" gate="ADC$1" pin="INB-"/>
 <wire x1="90.17" y1="-40.64" x2="88.9" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -9023,7 +9023,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="ADC2" gate="ADC$1" pin="AGND"/>
+<pinref part="U2" gate="ADC$1" pin="AGND"/>
 <wire x1="46.99" y1="-25.4" x2="58.42" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="49.53" y1="-30.48" x2="46.99" y2="-30.48" width="0.1524" layer="91"/>
@@ -9049,7 +9049,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="ADC1" gate="ADC$1" pin="AVDD"/>
+<pinref part="U1" gate="ADC$1" pin="AVDD"/>
 <pinref part="X1" gate="-2" pin="KL"/>
 <wire x1="46.99" y1="57.15" x2="24.13" y2="57.15" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -9071,7 +9071,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="46.99" x2="25.4" y2="52.07" width="0.1524" layer="91"/>
-<pinref part="ADC1" gate="ADC$1" pin="VFB"/>
+<pinref part="U1" gate="ADC$1" pin="VFB"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="46.99" y1="52.07" x2="25.4" y2="52.07" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="52.07" x2="20.32" y2="52.07" width="0.1524" layer="91"/>
@@ -9080,7 +9080,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="ADC1" gate="ADC$1" pin="INA-"/>
+<pinref part="U1" gate="ADC$1" pin="INA-"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="36.83" x2="19.05" y2="36.83" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -9100,7 +9100,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="ADC1" gate="ADC$1" pin="INA+"/>
+<pinref part="U1" gate="ADC$1" pin="INA+"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="46.99" y1="31.75" x2="36.83" y2="31.75" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -9120,7 +9120,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="ADC1" gate="ADC$1" pin="VBG"/>
+<pinref part="U1" gate="ADC$1" pin="VBG"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="46.99" y1="41.91" x2="45.72" y2="41.91" width="0.1524" layer="91"/>
 </segment>
@@ -9128,7 +9128,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="LDO" gate="U$1" pin="VIN"/>
+<pinref part="U3" gate="U$1" pin="VIN"/>
 <wire x1="22.86" y1="113.03" x2="25.4" y2="113.03" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="113.03" x2="29.21" y2="113.03" width="0.1524" layer="91"/>
@@ -9144,7 +9144,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <net name="N$10" class="0">
 <segment>
 <wire x1="29.21" y1="64.77" x2="36.83" y2="64.77" width="0.1524" layer="91"/>
-<pinref part="ADC1" gate="ADC$1" pin="BASE"/>
+<pinref part="U1" gate="ADC$1" pin="BASE"/>
 <wire x1="36.83" y1="64.77" x2="36.83" y2="62.23" width="0.1524" layer="91"/>
 <wire x1="36.83" y1="62.23" x2="46.99" y2="62.23" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="B"/>
@@ -9152,7 +9152,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="ADC2" gate="ADC$1" pin="AVDD"/>
+<pinref part="U2" gate="ADC$1" pin="AVDD"/>
 <pinref part="X4" gate="-2" pin="KL"/>
 <wire x1="58.42" y1="-15.24" x2="35.56" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -9174,7 +9174,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="36.83" y1="-25.4" x2="36.83" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="ADC2" gate="ADC$1" pin="VFB"/>
+<pinref part="U2" gate="ADC$1" pin="VFB"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="-20.32" x2="36.83" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="36.83" y1="-20.32" x2="31.75" y2="-20.32" width="0.1524" layer="91"/>
@@ -9183,7 +9183,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="ADC2" gate="ADC$1" pin="INA-"/>
+<pinref part="U2" gate="ADC$1" pin="INA-"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="26.67" y1="-35.56" x2="30.48" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
@@ -9203,7 +9203,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="ADC2" gate="ADC$1" pin="INA+"/>
+<pinref part="U2" gate="ADC$1" pin="INA+"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="-40.64" x2="48.26" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="2"/>
@@ -9223,7 +9223,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="ADC2" gate="ADC$1" pin="VBG"/>
+<pinref part="U2" gate="ADC$1" pin="VBG"/>
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="-30.48" x2="57.15" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
@@ -9231,7 +9231,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <net name="N$18" class="0">
 <segment>
 <wire x1="40.64" y1="-7.62" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="ADC2" gate="ADC$1" pin="BASE"/>
+<pinref part="U2" gate="ADC$1" pin="BASE"/>
 <wire x1="48.26" y1="-7.62" x2="48.26" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="-10.16" x2="58.42" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="B"/>
@@ -9240,11 +9240,11 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <net name="N$3" class="0">
 <segment>
 <pinref part="M1" gate="-CN9" pin="PA8"/>
-<pinref part="ADC1" gate="ADC$1" pin="PD_SCK"/>
+<pinref part="U1" gate="ADC$1" pin="PD_SCK"/>
 <wire x1="99.06" y1="44.45" x2="97.79" y2="44.45" width="0.1524" layer="91"/>
 <wire x1="97.79" y1="44.45" x2="77.47" y2="44.45" width="0.1524" layer="91"/>
 <wire x1="77.47" y1="44.45" x2="77.47" y2="41.91" width="0.1524" layer="91"/>
-<pinref part="ADC2" gate="ADC$1" pin="PD_SCK"/>
+<pinref part="U2" gate="ADC$1" pin="PD_SCK"/>
 <wire x1="88.9" y1="-30.48" x2="97.79" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="97.79" y1="-30.48" x2="97.79" y2="44.45" width="0.1524" layer="91"/>
 <junction x="97.79" y="44.45"/>
@@ -9252,7 +9252,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="ADC1" gate="ADC$1" pin="DOUT"/>
+<pinref part="U1" gate="ADC$1" pin="DOUT"/>
 <wire x1="77.47" y1="46.99" x2="87.63" y2="46.99" width="0.1524" layer="91"/>
 <wire x1="87.63" y1="46.99" x2="87.63" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="M1" gate="-CN8" pin="PC1"/>
@@ -9265,26 +9265,26 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <wire x1="100.33" y1="20.32" x2="100.33" y2="0" width="0.1524" layer="91"/>
 <wire x1="100.33" y1="0" x2="104.14" y2="0" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="0" x2="104.14" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="ADC2" gate="ADC$1" pin="DOUT"/>
+<pinref part="U2" gate="ADC$1" pin="DOUT"/>
 <wire x1="104.14" y1="-25.4" x2="88.9" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="ADC2" gate="ADC$1" pin="RATE"/>
+<pinref part="U2" gate="ADC$1" pin="RATE"/>
 <wire x1="88.9" y1="-10.16" x2="91.44" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-10.16" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="ADC1" gate="ADC$1" pin="RATE"/>
+<pinref part="U1" gate="ADC$1" pin="RATE"/>
 <wire x1="77.47" y1="62.23" x2="81.28" y2="62.23" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="62.23" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="21.59" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="ADC2" gate="ADC$1" pin="VSUP"/>
+<pinref part="U2" gate="ADC$1" pin="VSUP"/>
 <wire x1="35.56" y1="10.16" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="10.16" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-5.08" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
 <junction x="58.42" y="10.16"/>
-<pinref part="ADC2" gate="ADC$1" pin="DVDD"/>
+<pinref part="U2" gate="ADC$1" pin="DVDD"/>
 <wire x1="88.9" y1="-5.08" x2="88.9" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="2.54" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="90.17" y1="10.16" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
@@ -9295,14 +9295,14 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <wire x1="90.17" y1="90.17" x2="78.74" y2="90.17" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="82.55" x2="24.13" y2="82.55" width="0.1524" layer="91"/>
-<pinref part="ADC1" gate="ADC$1" pin="VSUP"/>
+<pinref part="U1" gate="ADC$1" pin="VSUP"/>
 <wire x1="24.13" y1="82.55" x2="46.99" y2="82.55" width="0.1524" layer="91"/>
 <wire x1="46.99" y1="82.55" x2="77.47" y2="82.55" width="0.1524" layer="91"/>
 <wire x1="46.99" y1="67.31" x2="46.99" y2="82.55" width="0.1524" layer="91"/>
 <junction x="46.99" y="82.55"/>
-<pinref part="ADC1" gate="ADC$1" pin="DVDD"/>
+<pinref part="U1" gate="ADC$1" pin="DVDD"/>
 <wire x1="77.47" y1="67.31" x2="77.47" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="LDO" gate="U$1" pin="VOUT"/>
+<pinref part="U3" gate="U$1" pin="VOUT"/>
 <wire x1="77.47" y1="76.2" x2="77.47" y2="82.55" width="0.1524" layer="91"/>
 <wire x1="59.69" y1="113.03" x2="64.77" y2="113.03" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="113.03" x2="78.74" y2="113.03" width="0.1524" layer="91"/>
