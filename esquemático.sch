@@ -8684,21 +8684,45 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 </class>
 </classes>
 <parts>
-<part name="U1" library="HX711" deviceset="HX711" device="SOIC127P600X140-16N" package3d_urn="urn:adsk.eagle:package:38132012/1"/>
-<part name="U3" library="Celda_Carga" deviceset="AP2210N-4.0TRG1" device=""/>
+<part name="U1" library="HX711" deviceset="HX711" device="SOIC127P600X140-16N" package3d_urn="urn:adsk.eagle:package:38132012/1">
+<attribute name="PARTNO" value="HX711"/>
+</part>
+<part name="U3" library="Celda_Carga" deviceset="AP2210N-4.0TRG1" device="">
+<attribute name="PARTNO" value="AP2210N-4.0TRG1"/>
+</part>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10u"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X1" library="1729128 - PHOENIX CONTACT" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
-<part name="X2" library="1729128 - PHOENIX CONTACT" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="203"/>
+<part name="X1" library="1729128 - PHOENIX CONTACT" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1">
+<attribute name="PARTNO" value="MKDSN1,5/2-5,08"/>
+</part>
+<part name="X2" library="1729128 - PHOENIX CONTACT" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1">
+<attribute name="PARTNO" value="MKDSN1,5/2-5,08"/>
+</part>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="203">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="PARTNO" value=""/>
+</part>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="822"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10u"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10u">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="PARTNO" value=""/>
+</part>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1u"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1u"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8708,14 +8732,20 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="2.2u"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U2" library="HX711" deviceset="HX711" device="SOIC127P600X140-16N" package3d_urn="urn:adsk.eagle:package:38132012/1"/>
+<part name="U2" library="HX711" deviceset="HX711" device="SOIC127P600X140-16N" package3d_urn="urn:adsk.eagle:package:38132012/1">
+<attribute name="PARTNO" value="HX711"/>
+</part>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10u"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X4" library="1729128 - PHOENIX CONTACT" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
-<part name="X3" library="1729128 - PHOENIX CONTACT" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
+<part name="X4" library="1729128 - PHOENIX CONTACT" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1">
+<attribute name="PARTNO" value="MKDSN1,5/2-5,08"/>
+</part>
+<part name="X3" library="1729128 - PHOENIX CONTACT" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1">
+<attribute name="PARTNO" value="MKDSN1,5/2-5,08"/>
+</part>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="203"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="822"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
@@ -8725,8 +8755,12 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1u"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q3" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" deviceset="MMBT4403*" device="SMD" package3d_urn="urn:adsk.eagle:package:28748/2" technology="LT1"/>
-<part name="Q1" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" deviceset="MMBT4403*" device="SMD" package3d_urn="urn:adsk.eagle:package:28748/2" technology="LT1"/>
+<part name="Q3" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" deviceset="MMBT4403*" device="SMD" package3d_urn="urn:adsk.eagle:package:28748/2" technology="LT1">
+<attribute name="PARTNO" value="BCR573E6327"/>
+</part>
+<part name="Q1" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" deviceset="MMBT4403*" device="SMD" package3d_urn="urn:adsk.eagle:package:28748/2" technology="LT1">
+<attribute name="PARTNO" value="BCR573E6327"/>
+</part>
 <part name="M1" library="NUCLEO-L452RE" deviceset="NUCLEO-L452RE" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8739,9 +8773,11 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <instance part="U1" gate="ADC$1" x="72.39" y="52.07" smashed="yes">
 <attribute name="NAME" x="59.69" y="74.93" size="1.778" layer="95"/>
 <attribute name="VALUE" x="59.69" y="21.59" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="72.39" y="52.07" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U3" gate="U$1" x="77.47" y="100.33" smashed="yes">
 <attribute name="NAME" x="39.37" y="125.73" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="77.47" y="100.33" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND2" gate="1" x="81.28" y="57.15" smashed="yes" rot="R90">
 <attribute name="VALUE" x="83.82" y="54.61" size="1.778" layer="96" rot="R90"/>
@@ -8769,6 +8805,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <instance part="X1" gate="-2" x="-40.64" y="57.15" smashed="yes" rot="R180">
 <attribute name="NAME" x="-43.688" y="58.039" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-38.1" y="60.833" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-40.64" y="57.15" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="X2" gate="-1" x="-40.64" y="39.37" smashed="yes" rot="R180">
 <attribute name="NAME" x="-43.688" y="40.259" size="1.778" layer="95" rot="R180"/>
@@ -8777,10 +8814,12 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <instance part="X2" gate="-2" x="-40.64" y="44.45" smashed="yes" rot="R180">
 <attribute name="NAME" x="-43.688" y="45.339" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-38.1" y="48.133" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-40.64" y="44.45" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R1" gate="G$1" x="15.24" y="52.07" smashed="yes">
 <attribute name="NAME" x="11.43" y="53.5686" size="1.778" layer="95"/>
 <attribute name="VALUE" x="11.43" y="48.768" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="15.24" y="52.07" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="30.48" y="46.99" smashed="yes">
 <attribute name="NAME" x="26.67" y="48.4886" size="1.778" layer="95"/>
@@ -8797,6 +8836,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <instance part="C2" gate="G$1" x="-12.7" y="52.07" smashed="yes" rot="R90">
 <attribute name="NAME" x="-13.335" y="53.086" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-8.509" y="53.086" size="1.778" layer="96" rot="R90"/>
+<attribute name="PARTNO" x="-12.7" y="52.07" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C3" gate="G$1" x="40.64" y="41.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="40.005" y="42.926" size="1.778" layer="95" rot="R90"/>
@@ -8832,6 +8872,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <instance part="U2" gate="ADC$1" x="83.82" y="-20.32" smashed="yes">
 <attribute name="NAME" x="71.12" y="2.54" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.12" y="-50.8" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="83.82" y="-20.32" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND12" gate="1" x="92.71" y="-15.24" smashed="yes" rot="R90">
 <attribute name="VALUE" x="95.25" y="-17.78" size="1.778" layer="96" rot="R90"/>
@@ -8856,6 +8897,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <instance part="X4" gate="-2" x="-29.21" y="-15.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="-32.258" y="-14.351" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-26.67" y="-11.557" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-29.21" y="-15.24" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="X3" gate="-1" x="-29.21" y="-33.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="-32.258" y="-32.131" size="1.778" layer="95" rot="R180"/>
@@ -8864,6 +8906,7 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <instance part="X3" gate="-2" x="-29.21" y="-27.94" smashed="yes" rot="R180">
 <attribute name="NAME" x="-32.258" y="-27.051" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-26.67" y="-24.257" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-29.21" y="-27.94" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R5" gate="G$1" x="26.67" y="-20.32" smashed="yes">
 <attribute name="NAME" x="22.86" y="-18.8214" size="1.778" layer="95"/>
@@ -8902,10 +8945,12 @@ Al momento de diseñar la tarjeta, el Dimension debe ser dibujado según los req
 <instance part="Q3" gate="G$1" x="26.67" y="64.77" smashed="yes" rot="MR0">
 <attribute name="NAME" x="36.83" y="72.39" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="36.83" y="69.85" size="1.778" layer="96" rot="MR0"/>
+<attribute name="PARTNO" x="26.67" y="64.77" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="Q1" gate="G$1" x="38.1" y="-7.62" smashed="yes" rot="MR0">
 <attribute name="NAME" x="48.26" y="0" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="48.26" y="-2.54" size="1.778" layer="96" rot="MR0"/>
+<attribute name="PARTNO" x="38.1" y="-7.62" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="M1" gate="-CN7" x="133.35" y="35.56" smashed="yes">
 <attribute name="NAME" x="123.444" y="61.976" size="1.778" layer="95"/>
